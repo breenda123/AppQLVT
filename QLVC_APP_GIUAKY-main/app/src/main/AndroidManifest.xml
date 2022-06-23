@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".NotificationApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".KH_PVC_Activity"
+            android:exported="false" />
+        <!--
+         <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBjJV4iqkoi5RS_0xiCUKWr_sJt5MaSSzo" />
+             <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBv-_4fA_nCK8TJ2kOSDZhFB3lVEC5eHIU" />
+        <activity android:name=".dashboard"/>
+        <activity android:name=".MPLineChart"/>
+        <activity android:name=".SignUp"/>
+        <activity android:name=".KhachHangActivity" />
+        <activity android:name=".SuaVTActivity" />
+        <activity android:name=".SuaKHActivity" />
+        <activity android:name=".SuaCongTrinhActivity" />
+        <activity android:name=".ThemCTActivity" />
+        <activity android:name=".ThemVTActivity" />
+        <activity android:name=".ThemPVCActivity" />
+        <activity android:name=".ThemKHActivity" />
+        <activity android:name=".ThemCTVCActivity" />
+        <activity android:name=".NotifyActivity" />
+        <activity android:name=".ChiTietPVCActivity" />
+        <activity android:name=".PhieuVanChuyenActivity" />
+        <activity android:name=".Map" />
+        <activity android:name=".bando" />
+        <activity android:name=".DSVatTuActivity" />
+        <activity android:name=".CongTrinhActivity" />
+        <activity android:name=".InChiTietPhieuActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
